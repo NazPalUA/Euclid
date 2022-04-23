@@ -1,0 +1,74 @@
+.sec-questions {
+
+  &__details {
+    margin-bottom: 40px;
+  
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 110px;
+    border-top: 1px solid #CACACA;
+
+    list-style: none;
+    cursor: pointer;
+  }
+
+  &__summary-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    
+    transition: color 0.3s;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    line-height: 70px;
+  }
+
+  &__summary-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(/img/more-icon-defalt.svg);
+    
+    transition: transform 0.5s;
+  }
+
+  .ui-state-hover &__summary-text {
+    color: #FF9900;
+  }
+
+  .ui-state-hover &__summary-icon {
+    background-image: url(/img/more-icon-hover.svg);
+  }
+
+  .ui-state-focus {
+    outline: none;
+  }
+
+  .ui-state-focus &__summary-icon {
+    background-image: url(/img/more-icon-hover.svg);
+    
+  }
+
+  .ui-state-focus &__summary-text {
+    color: #FF9900;
+  }
+  
+  .ui-state-active &__summary-icon {
+    transform: rotate(45deg);
+  }
+
+}
+
+#accordion {
+  border-bottom: 1px solid #CACACA;
+}

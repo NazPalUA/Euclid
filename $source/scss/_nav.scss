@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &__item {
+    display: inline-block;
+    margin-right: 85px;
+    
+    &:last-child {
+      margin-right: 81px;
+    }
+  }
+
+  &__item-link {
+    display: inline-block;
+    border: 0px solid #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    
+    transition-duration: 0.1s;
+    transition-property: border-bottom-color, border-bottom-width, color;
+    
+    &:hover {
+      border-bottom: 2px solid #FF9900;
+      margin-bottom: -2px;
+    }
+    
+    &:focus-visible {
+      outline: 2px solid #FF9900;
+      outline-offset: 2px;
+    }
+  
+    &:active {
+      border-bottom-color: #E1670E;
+      color: #E1670E;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+/* Button & Section-Banner Button*/
+.btn {
+  display: inline-block;
+  padding: 24.8px 36.6px;
+  border: none;
+  background: rgb(255, 153, 0);
+  
+  font-family: Montserrat;
+  font-size: 23.4581px;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  
+  transition-property: background-color, outline-color, color, opacity ;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+
+  &:hover {
+    background: rgba(255, 153, 0, 0.7);
+  }
+  
+  &:focus-visible {
+    background: rgba(255, 153, 0, 0.7);
+    outline: 4px solid #FF9900;
+    outline-offset: 4px;
+  }
+  
+  &:active {
+    background: #E1670E;
+  }
+}
+
+
+
+/* Section About Button */
+.btn_transparent {
+  padding: 20px 38px;
+  outline: 3px solid #FF9900;
+  outline-offset: -3px;
+
+  background: transparent;
+  
+  font-size: 16px;
+  line-height: 20px;
+  
+  &:hover {
+    outline-color: transparent;
+    background: #FF9900;
+  }
+  
+  &:focus-visible {
+    outline: 4px solid #FF9900;
+    outline-offset: 4px;
+    background: #FF9900;
+  }
+  
+  &:active {
+    outline-color: transparent;
+    background: #E1670E;
+  }
+}
+
+/* Button Section Work */
+
+.btn_secondary {
+  outline: none;
+  background: #FF9900;
+
+  &:hover {
+    background: #F7B045;
+  }
+  
+  &:focus-visible {
+    background: #F7B045;
+    outline: 4px solid #FF9900;
+    outline-offset: 4px;
+  }
+  
+  &:active {
+    background: #E1670E;
+  }
+}
+
+
+/* Button Section Work Black-and-white*/
+.btn_black-and-white {
+  outline: 1px solid #333333;
+  outline-offset: -2px;
+  background: #FFF;
+
+  font-weight: normal;
+  color: #333333;
+
+  &:hover {
+    outline-color: #666666;
+    background: #666666;
+    
+    color: #FFF;
+  }
+  
+  &:focus-visible {
+    background: #666666;
+    color: #FFF;
+
+    outline: 4px solid #666666;
+    outline-offset: 4px;
+  }
+  
+  &:active {
+    background: #000;
+    outline-color: #000;
+    color: #FFF;
+}
+}
+
+
+/* Button Footer*/
+.btn_secondary_form {
+  padding: 19px 52px;
+ 
+  font-size: 16px;
+  line-height: 20px;
+}

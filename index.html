@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Euclid</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/script.js"></script>
+  <!-- ----------Sweeper---------- -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <!-- ----------/Sweeper---------- -->
+   <!------------JQuery Acordion------------>
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script>
+   $( function() {
+     $( "#accordion" ).accordion({
+       collapsible: true,
+       heightStyle: "content",
+       active: false,
+     });
+   } );
+   </script>
+   <!------------/jQuery Acordion------------>
+</head>
+<body>
+  <header class="header">
+      <div class="conteiner header__conteiner">
+              <img src="img/Logo.svg" alt="Logo" class="header__logo-img">
+              <nav class="nav">
+                  <ul class="nav__list">
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">
+                              О нас
+                          </a>
+                      </li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">
+                              Проекты
+                          </a>
+                      </li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">
+                              Этапы 
+                          </a>
+                      </li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">
+                              Отзывы
+                          </a>
+                      </li>
+                      <li class="nav__item">
+                          <a href="" class="nav__item-link">
+                              Контакты
+                          </a>
+                      </li>
+                  </ul>
+                  <div class="search-box">
+                    <input type="text" class="search-box__input" placeholder="Что будем искать?">
+                    <div class="search-box__btn search-box__search-btn"></div>
+                    <div class="search-box__btn search-box__cancel-btn"></div>
+                  </div>
+              </nav>
+      </div>
+  </header>
+  <main class="main">
+    <section class="section sec-banner">
+        <div class="conteiner">
+            <div class="sec-banner__slider">
+                <div class="sec-banner__slider-content">
+                    <h1 class="sec-banner__title">
+                        Проектные решения любой сложности
+                    </h1>
+                    <p class="sec-banner__description">
+                        Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                    </p>
+
+                </div>
+                <a href="" style="cursor: pointer;" class="sec-banner__btn btn" tabindex="0">
+                    Заказать расчёт
+                </a>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="swiper-slide-img" src="/img/pic_1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide-img" src="/img/pic_2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide-img" src="/img/pic_3.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>        
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section sec-about">
+        <div class="conteiner">
+            <h2 class="title sec-about__title">
+                О нас
+            </h2>
+            <p class="sec-about__description">
+                Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
+            </p>
+            <div class="sec-about__cards">
+                <div class="sec-about__left description-card">
+                    <div class="description-card__bottom">
+                        <p class="description-card__text">
+                            Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
+                        </p>
+                        <a href="" class="description-card__btn btn btn_transparent">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <ul class="sec-about__right">
+                    <li class="benefit-card sec-about__card">
+                        <img src="img/About_Us_Pic_Icon_1.svg" alt="icon" class="benefit-card__icon">
+                        <p class="description benefit-card__description">
+                            <span class="benefit-card__description-strong">
+                              Консультация с широким активом
+                            </span>
+                            А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
+                        </p>
+                    </li>
+                    <li class="benefit-card sec-about__card">
+                      <img src="img/About_Us_Pic_Icon_2.svg" alt="icon" class="benefit-card__icon">
+                        <p class="description benefit-card__description">
+                            <span class="benefit-card__description-strong">
+                              В своём стремлении повысить
+                            </span>
+                            Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. 
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section sec-work">
+        <div class="conteiner">
+            <h2 class="title sec-work__title">
+                Как мы работаем
+            </h2>
+            <div class="sec-work__tabs">
+                <ul class="sec-work__tab-list">
+                    <li class="sec-work__tab-item active" data-path="one" tabindex="0">
+                        1 шаг
+                    </li>
+                    <li class="sec-work__tab-item" data-path="two" tabindex="0">
+                        2 шаг
+                    </li>
+                    <li class="sec-work__tab-item" data-path="three" tabindex="0">
+                        3 шаг
+                    </li>
+                    <li class="sec-work__tab-item" data-path="four" tabindex="0">
+                        4 шаг
+                    </li>
+                </ul>
+                <ul class="sec-work__content-list">
+                    <li class="sec-work__content-item active" data-target="one">
+                        <div class="sec-work__text-wraper">
+                            <strong class="strong-title">
+                                    Проводим консультацию
+                            </strong>
+                            <p class="sec-work__step-description">
+                                    Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                            </p>
+                        </div>
+                        <img src="img/Step_1.jpg" alt="Картинка" class="sec-work__pic">
+                    </li>
+                    <li class="sec-work__content-item" data-target="two">
+                        <div class="sec-work__text-wraper">
+                            <strong class="strong-title">
+                                    Составляем смету
+                            </strong>
+                            <p class="sec-work__step-description">
+                                    Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                            </p>
+                        </div>
+                        <img src="img/Step_2.jpg" alt="Картинка" class="sec-work__pic">
+                    </li>
+                    <li class="sec-work__content-item" data-target="three">
+                        <div class="sec-work__text-wraper">
+                            <strong class="strong-title">
+                                    Привлекаем подрядчиков
+                            </strong>
+                            <p class="sec-work__step-description">
+                                    Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+                            </p>
+                        </div>
+                        <img src="img/Step_3.jpg" alt="Картинка" class="sec-work__pic">
+                    </li>
+                    <li class="sec-work__content-item" data-target="four">
+                        <div class="sec-work__text-wraper">
+                                <strong class="strong-title">
+                                    Инспектируем все этапы работ
+                                </strong>
+                                <p class="sec-work__step-description">
+                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                                </p>
+                        </div>
+                        <img src="img/Step_4.jpg" alt="Картинка" class="sec-work__pic">
+                    </li>
+                </ul>
+                <div class="sec-work__btns-position">
+                    <a href="" class="sec-work__btn btn btn_secondary">
+                        Подробнее
+                    </a>
+                    <a href="" class="sec-work__btn btn btn_black-and-white">
+                        Договор
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section sec-questions">
+        <div class="conteiner">
+            <h2 class="title sec-questions__title">
+                Часто задаваемые вопросы
+            </h2>
+            <!-- <div class="sec-questions__list">
+              <details class="sec-questions__item">
+                  <summary class="sec-questions__summary">
+                    <p class="sec-questions__summary-text">
+                      Из чего формируется конечная стоимость проекта?
+                    </p>
+                    <div class="sec-questions__summary-icon"></div>
+                  </summary>
+                  <p class="sec-questions__details">
+                    Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                    <br><br>
+                    Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                  </p>
+              </details>
+              <details class="sec-questions__item">
+                <summary class="sec-questions__summary">
+                  <p class="sec-questions__summary-text">
+                    У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+                  </p>
+                  <div class="sec-questions__summary-icon"></div>
+                </summary>
+                <p class="sec-questions__details">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati eveniet, ducimus laborum nihil esse dignissimos illo sequi quis! Illum similique laborum itaque temporibus hic voluptas molestias quis, aspernatur ex!
+                </p>
+              </details>
+              <details class="sec-questions__item">
+              <summary class="sec-questions__summary">
+                <p class="sec-questions__summary-text">
+                  Я выбираю между разными компаниями. В чём ваше отличие?
+                </p>
+                <div class="sec-questions__summary-icon"></div>
+              </summary>
+              <p class="sec-questions__details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa nemo laboriosam corrupti iure tempora at, maxime, excepturi voluptates dignissimos itaque veniam. Possimus ea autem rem error reprehenderit blanditiis iste?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum autem repellendus ad ducimus corrupti, necessitatibus vitae doloribus at eveniet aut, soluta labore voluptate praesentium itaque odio quibusdam voluptatibus delectus architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam natus deleniti quaerat reiciendis laudantium, mollitia accusantium ea delectus, minima in architecto veniam nesciunt provident sed itaque aspernatur facilis eos vitae.
+              </p>
+              </details>
+              <details class="sec-questions__item">
+            <summary class="sec-questions__summary">
+              <p class="sec-questions__summary-text">
+                Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? 
+              </p>
+              <div class="sec-questions__summary-icon"></div>
+            </summary>
+            <p class="sec-questions__details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut obcaecati libero similique beatae eligendi at expedita mollitia vero, cum quam quisquam possimus accusamus animi illum. Eius, numquam. Cum, consequatur sequi?
+            </p>
+              </details>
+              <details class="sec-questions__item">
+          <summary class="sec-questions__summary sec-questions__summary_border-bottom">
+            <p class="sec-questions__summary-text">
+              Могу ли я вернуть деньги на каком-либо из этапов работ?
+            </p>
+            <div class="sec-questions__summary-icon"></div>
+          </summary>
+          <p class="sec-questions__details">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum perferendis laboriosam consequatur atque nobis quae ipsa iste quidem blanditiis nisi officiis, quibusdam iure assumenda possimus. Officia quod accusantium voluptas!
+          </p>
+              </details>
+            </div> -->
+            <div id="accordion">
+                <h3>
+                    <summary class="sec-questions__summary">
+                        <p class="sec-questions__summary-text">
+                          Из чего формируется конечная стоимость проекта?
+                        </p>
+                        <div class="sec-questions__summary-icon"></div>
+                      </summary>
+                </h3>
+                <div>
+                    <p class="sec-questions__details">
+                        Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                        <br><br>
+                        Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                      </p>
+                </div>
+                <h3>
+                    <summary class="sec-questions__summary">
+                        <p class="sec-questions__summary-text">
+                          У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+                        </p>
+                        <div class="sec-questions__summary-icon"></div>
+                      </summary>
+                </h3>
+                <div>
+                    <p class="sec-questions__details">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum obcaecati eveniet, ducimus laborum nihil esse dignissimos illo sequi quis! Illum similique laborum itaque temporibus hic voluptas molestias quis, aspernatur ex!
+                      </p>
+                </div>
+                <h3>
+                    <summary class="sec-questions__summary">
+                        <p class="sec-questions__summary-text">
+                          Я выбираю между разными компаниями. В чём ваше отличие?
+                        </p>
+                        <div class="sec-questions__summary-icon"></div>
+                      </summary>
+                </h3>
+                <div>
+                    <p class="sec-questions__details">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa nemo laboriosam corrupti iure tempora at, maxime, excepturi voluptates dignissimos itaque veniam. Possimus ea autem rem error reprehenderit blanditiis iste?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum autem repellendus ad ducimus corrupti, necessitatibus vitae doloribus at eveniet aut, soluta labore voluptate praesentium itaque odio quibusdam voluptatibus delectus architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam natus deleniti quaerat reiciendis laudantium, mollitia accusantium ea delectus, minima in architecto veniam nesciunt provident sed itaque aspernatur facilis eos vitae.
+                      </p>
+                  <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                  </ul>
+                </div>
+                <h3>
+                    <summary class="sec-questions__summary">
+                        <p class="sec-questions__summary-text">
+                          Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? 
+                        </p>
+                        <div class="sec-questions__summary-icon"></div>
+                      </summary>
+                </h3>
+                <div>
+                    <p class="sec-questions__details">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut obcaecati libero similique beatae eligendi at expedita mollitia vero, cum quam quisquam possimus accusamus animi illum. Eius, numquam. Cum, consequatur sequi?
+                      </p>
+                </div>
+                <h3>
+                    <summary class="sec-questions__summary sec-questions__summary_border-bottom">
+                        <p class="sec-questions__summary-text">
+                          Могу ли я вернуть деньги на каком-либо из этапов работ?
+                        </p>
+                        <div class="sec-questions__summary-icon"></div>
+                      </summary>
+                </h3>
+                <div>
+                    <p class="sec-questions__details sec-questions__details_last-child">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum perferendis laboriosam consequatur atque nobis quae ipsa iste quidem blanditiis nisi officiis, quibusdam iure assumenda possimus. Officia quod accusantium voluptas!
+                      </p>
+                </div>
+              </div>
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="conteiner footer__conteiner">
+        <div class="footer__left">
+            <div class="footer__left-top">
+                <img src="img/footer-logo.svg" alt="Logo" class="footer__logo">
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                     <li class="footer__nav-item">
+                         <a href="" class="footer__nav-link">
+                             О нас
+                         </a>
+                     </li>
+                     <li class="footer__nav-item">
+                         <a href="" class="footer__nav-link">
+                             Проекты
+                         </a>
+                     </li>
+                     <li class="footer__nav-item">
+                         <a href="" class="footer__nav-link">
+                             Отзывы
+                         </a>
+                     </li>
+                     <li class="footer__nav-item">
+                         <a href="" class="footer__nav-link">
+                             Договор оферты
+                         </a>
+                     </li>
+                     <li class="footer__nav-item">
+                         <a href="" class="footer__nav-link">
+                             Договор подряда
+                         </a>
+                     </li>
+                     <li class="footer__nav-item">
+                         <a href="" class="footer__nav-link">
+                             Конфиденциальность
+                         </a>
+                     </li>
+                     <li class="footer__nav-item">
+                         <a href="" class="footer__nav-link">
+                             Партнёрское соглашение
+                         </a>
+                     </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="social footer__social">
+                <li class="social__item social__item_bg_fb">
+                    <a href="" class="social__link"> </a>
+                </li>
+                <li class="social__item social__item_bg_vk">
+                    <a href="" class="social__link"> </a>
+                </li>
+                <li class="social__item social__item_bg_inst">
+                    <a href="" class="social__link"> </a>
+                </li>
+            </ul>
+        </div>
+        <form action="" class="form footer__form">
+            <h2 class="title form__title">
+                Оставить заявку
+            </h2>
+            <input type="text" name="user" placeholder="Фамилия, имя и отчество*" class="form__input" required>
+            <input type="email" name="email" placeholder="E-mail*" class="form__input" required>
+            <textarea name="message" placeholder="Сообщение" class="form__input form__input_resize_none"></textarea>
+            <div class="form__btn-conteiner">
+                <button class="form__btn btn btn_secondary_form">
+                Отправить данные
+                </button>
+                <label for="ag-check" class="form__ag-check">
+                    <input type="checkbox" name="agreement" id="ag-check" class="form__checkbox" required>
+                    <p class="form__ag-check-text">
+                        Согласен на обработку данных
+                    </p>
+                </label>
+            </div>
+        </form>
+        <p class="footer__description">
+            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. 
+        </p>
+    </div>
+</footer>
+</body>
+</html>

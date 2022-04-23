@@ -1,0 +1,27 @@
+.benefit-card {
+  display: flex;
+  padding: 5%;
+  border: 1px solid #CACACA;
+  height: 295px;
+
+  &__description  {
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+  }
+
+  &__description-strong {
+    display: block;
+    margin-bottom: 8px;
+  
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333;
+  }
+
+  &__icon {
+    margin-right: 50px;
+    width: 22%;
+  }
+}

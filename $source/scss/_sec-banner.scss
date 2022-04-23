@@ -1,0 +1,46 @@
+.sec-banner {
+  
+  &__slider {
+    position: relative;
+  }
+  
+  &__slider-content {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 85px;
+    color: #FFFFFF;
+  
+    max-width: 840px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+    margin-left: 80px;
+  }
+
+  &__description {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+    color: #FFFFFF;
+  
+    max-width: 790px;
+    margin-top: 24px;
+    margin-bottom: 90px;
+    margin-left: 80px;
+  }
+
+  &__btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 100px;
+    left: 80px;
+  }
+}

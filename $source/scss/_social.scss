@@ -1,0 +1,62 @@
+.social {
+  display: flex;
+
+  &__link {
+    display: block;
+    height: 60px;
+    width: 60px;
+
+    &:focus-visible {
+      outline: 2px solid #FF9900;
+      outline-offset: 4px;
+    }
+  }
+
+  &__item {
+    height: 60px;
+    width: 60px;
+    transition: background-image 0.2s;
+
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__item_bg_fb {
+    background-image: url(/img/fb/fb.svg);
+    
+      &:hover {
+        background-image: url(/img/fb/fb_hover.svg);
+      }
+    
+      &:active {
+        background-image: url(/img/fb/fb_active.svg);
+      }
+  }
+
+  &__item_bg_inst {
+    background-image: url(/img/inst/instagram.svg);
+    
+    &:hover {
+      background-image: url(/img/inst/instagram_hover.svg);
+    }
+  
+    &:active {
+      background-image: url(/img/inst/instagram_active.svg);
+    }
+  }
+
+  &__item_bg_vk {
+    background-image: url(/img/vk/vk.svg);
+    
+    &:hover {
+      background-image: url(/img/vk/vk_hover.svg);
+    }
+  
+    &:active {
+      background-image: url(/img/vk/vk_active.svg);
+    }
+  }
+
+}

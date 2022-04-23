@@ -1,0 +1,116 @@
+.form {
+
+  &__title {
+    color: #CACACA;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    display: block;
+    height: 60px;
+    width: 570px;
+    margin-bottom: 25px;
+    outline: none;
+    border: none;
+    line-height: 32px;
+  
+    color: #FFF;
+  
+    padding: 14px 24px;
+  
+    background: #414141;
+    transition: background-color 0.3s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: #666666;
+    }
+    
+    &::placeholder {
+      position: absolute;
+      left: 24px;
+      top: 14px;
+    
+      font-size: 16px;
+      line-height: 32px;
+      color: #CACACA;
+    }
+  }
+
+  &__input_resize_none {
+    height: 150px;
+    width: 570px;
+    resize: none;
+  }
+
+  &__btn {
+    // margin-right: 22px;
+  }
+
+  &__btn-conteiner {
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+  }
+
+  &__ag-check {
+    display: flex;
+    align-items: center;
+    &-text {
+      font-size: 16px;
+      line-height: 32px;
+      color: #CACACA;
+    
+      margin-left: 4px;
+      cursor: pointer;
+
+      &:hover {
+        color: #FF9900;
+      }
+
+      &:active {
+        color: #E1670E;
+      }
+  
+      &::before {
+        content: '';
+        display: inline-block;
+        box-sizing: border-box;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #CACACA;
+
+        transform: translateY(1px);
+
+      }
+    }
+  }
+
+  &__ag-check.active {
+
+    .form__ag-check-text::before  {
+      // box-sizing: border-box;
+      // display: inline-block;
+      // width: 4px;
+      // height: 7px;
+      // border: 2px solid #97EE3F;
+      // transform: rotate(45deg);
+      border: none;
+      background-image: url(/img/Check_active.svg);
+    }
+  }
+
+
+  &__checkbox {
+    transform:translateX(18px);
+    z-index: -2;
+
+    &:focus-visible + .form__ag-check-text{
+      outline: 3px solid #FF9900;
+      outline-offset: 6px;
+    }
+  }
+
+
+}

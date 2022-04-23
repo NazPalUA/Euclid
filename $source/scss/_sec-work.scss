@@ -1,0 +1,65 @@
+.sec-work {
+  
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__tabs {
+    position: relative;
+  }
+  
+  &__tab-list {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__tab-item {
+    margin-right: 85px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    &:hover {
+      color: #FF9900;
+    }
+    &:focus-visible {
+      outline: 2px solid #FF9900;
+      outline-offset: 5px;
+    }
+
+    &.active {
+      color: #E1670E;
+    }
+  }
+  
+  &__content-list {
+    min-height: 460px;
+  }
+
+  &__content-item {
+    display: none;
+
+    &.active {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__step-description {
+    width: 758px;
+  
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+  }
+
+  &__btns-position {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  &__btn {
+    margin-right: 32px;
+  }
+}

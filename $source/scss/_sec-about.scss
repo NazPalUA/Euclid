@@ -1,0 +1,28 @@
+.sec-about {
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    max-width: 1235px;
+    margin-bottom: 50px;
+  }
+
+  &__cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__left {
+    
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+  }
+}
