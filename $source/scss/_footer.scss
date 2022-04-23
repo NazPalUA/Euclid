@@ -4,7 +4,8 @@
   &__conteiner {
     display: flex;
     justify-content: space-between;
-    padding: 50px 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   &__left {
@@ -69,5 +70,9 @@
     color: #CACACA;
   
     margin-top: 87px;
+
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
   }
 }

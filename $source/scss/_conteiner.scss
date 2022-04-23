@@ -3,11 +3,12 @@
   width: 1770px;
   margin: auto;
   padding: 0 75px;
+
 }
 
-@media (max-width: 1920px) {
+@media screen and (max-width: $big-desktop) {
   .conteiner {
-    width: 96vw;
-    padding: 0 2vw;
+    width: unset;
+    padding: 0 50px;
   }
 }
