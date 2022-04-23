@@ -9,20 +9,87 @@
     margin-bottom: 50px;
   }
 
-  &__cards {
+  &__main-content {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
 
-  &__left {
-    
+  &__banner {
+    position: relative;
+    height: 622px;
+    width: 49.04%;
+    background-image: url(/img/About_Us_Pic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
-  &__right {
+  &__banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 196px;
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &__banner-text {
+    width: 454px;
+    margin-left: 50px;
+  
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  &__btn {
+    margin-right: 50px;
+  }
+
+  &__cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 48%;
+    width: 49.153%;
+  }
+
+  &__card {
+    border: 1px solid #CACACA;
+    height: 295px;
+  }
+
+  &__card-content {
+    display: flex;
+    height: 295px;
+    width: 100%;
+    padding: 7.47% 6.9% 7.47% 6.9%;
+  }
+
+  &__card-icon {
+    margin-right: 7.26%;
+    width: 27.61%;
+  }
+
+  &__card-description  {
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+  }
+
+  &__card-title {
+    display: block;
+    margin-bottom: 8px;
+  
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333;
   }
 }

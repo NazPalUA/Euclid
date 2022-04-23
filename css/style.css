@@ -577,7 +577,6 @@ body {
 }
 
 .header {
-  width: 100vw;
   -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
@@ -682,7 +681,7 @@ body {
 /* Button Section Work Black-and-white*/
 .btn_black-and-white {
   outline: 1px solid #333333;
-  outline-offset: -2px;
+  outline-offset: -1px;
   background: #FFF;
   font-weight: normal;
   color: #333333;
@@ -807,17 +806,36 @@ body {
   left: 80px;
 }
 
-.description-card {
+.sec-about__title {
+  margin-bottom: 20px;
+}
+
+.sec-about__description {
+  max-width: 1235px;
+  margin-bottom: 50px;
+}
+
+.sec-about__main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec-about__banner {
   position: relative;
   height: 622px;
-  width: 48%;
+  width: 49.04%;
   background-image: url(/img/About_Us_Pic.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.description-card__bottom {
+.sec-about__banner-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,7 +853,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.description-card__text {
+.sec-about__banner-text {
   width: 454px;
   margin-left: 50px;
   font-size: 16px;
@@ -844,59 +862,11 @@ body {
   color: #fff;
 }
 
-.description-card__btn {
+.sec-about__btn {
   margin-right: 50px;
-}
-
-.benefit-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5%;
-  border: 1px solid #CACACA;
-  height: 295px;
-}
-
-.benefit-card__description {
-  font-size: 16px;
-  line-height: 32px;
-  color: #333333;
-}
-
-.benefit-card__description-strong {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  color: #333;
-}
-
-.benefit-card__icon {
-  margin-right: 50px;
-  width: 22%;
-}
-
-.sec-about__title {
-  margin-bottom: 20px;
-}
-
-.sec-about__description {
-  max-width: 1235px;
-  margin-bottom: 50px;
 }
 
 .sec-about__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.sec-about__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,7 +877,41 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 48%;
+  width: 49.153%;
+}
+
+.sec-about__card {
+  border: 1px solid #CACACA;
+  height: 295px;
+}
+
+.sec-about__card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 295px;
+  width: 100%;
+  padding: 7.47% 6.9% 7.47% 6.9%;
+}
+
+.sec-about__card-icon {
+  margin-right: 7.26%;
+  width: 27.61%;
+}
+
+.sec-about__card-description {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.sec-about__card-title {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333;
 }
 
 .strong-title {
@@ -1258,8 +1262,11 @@ body {
   background-image: url(/img/vk/vk_active.svg);
 }
 
-.footer__conteiner {
+.footer {
   background: #222222;
+}
+
+.footer__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
