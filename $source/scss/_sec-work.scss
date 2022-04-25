@@ -51,6 +51,19 @@
     font-size: 16px;
     line-height: 32px;
     color: #333333;
+    @media screen and (max-width: $big-desktop) {
+      // width: 47vw;
+      margin-right: 25px;
+    }
+  }
+
+  &__pic {
+    @media screen and (max-width: $big-desktop) {
+      width: 35vw;
+      object-fit: contain;
+      // height: 100%;
+    
+    }
   }
 
   &__btns-position {

@@ -67,9 +67,14 @@
 
   &__card-content {
     display: flex;
+    align-items: center;
     height: 295px;
     width: 100%;
-    padding: 7.47% 6.9% 7.47% 6.9%;
+    padding: 7.47% 6.9%;
+
+    @media screen and (max-width: $big-desktop) {
+      padding: 35px 32px;
+    }
   }
 
   &__card-icon {
