@@ -11,3 +11,4 @@ includeScript("$source/js/search_box.js");
 includeScript("$source/js/swiper.js");
 includeScript("$source/js/sec_work.js");
 includeScript("$source/js/form.js");
+includeScript("$source/js/burger.js");
