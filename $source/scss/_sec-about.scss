@@ -13,6 +13,10 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    @media screen and (max-width: $desktop) {
+      flex-direction: column;
+    }
   }
 
   &__banner {
@@ -23,6 +27,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width: $desktop) {
+      width: 100%;
+      margin-bottom: 32px;
+    }
   }
 
   &__banner-content {
@@ -47,6 +56,11 @@
     font-weight: 700;
     line-height: 32px;
     color: #fff;
+
+    @media screen and (max-width: $small-desktop) {
+      width: 366px;
+      margin-left: 40px;
+    }
   }
 
   &__btn {
@@ -58,11 +72,21 @@
     flex-direction: column;
     justify-content: space-between;
     width: 49.153%;
+
+    @media screen and (max-width: $desktop) {
+      width: 100%;
+    }
   }
 
   &__card {
     border: 1px solid #CACACA;
     height: 295px;
+
+    @media screen and (max-width: $desktop) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
   }
 
   &__card-content {
@@ -75,11 +99,27 @@
     @media screen and (max-width: $big-desktop) {
       padding: 35px 32px;
     }
+    @media screen and (max-width: $desktop) {
+      padding: 65px 155px 65px 77px;
+    }
+
+    @media screen and (max-width: $small-desktop) {
+      padding: 30px;
+    }
   }
 
   &__card-icon {
     margin-right: 7.26%;
     width: 27.61%;
+
+    @media screen and (max-width: $desktop) {
+      margin-right: 50px;
+      width: 190px;
+    }
+    @media screen and (max-width: $small-desktop) {
+      margin-right: 16px;
+      width: 114px;
+    }
   }
 
   &__card-description  {

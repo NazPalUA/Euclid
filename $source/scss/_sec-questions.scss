@@ -9,9 +9,10 @@
   }
 
   &__summary {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     
     height: 110px;
     border-top: 1px solid #CACACA;
@@ -27,6 +28,12 @@
     color: #333333;
     
     transition: color 0.3s;
+
+    padding-right: 80px;
+
+    @media screen and (max-width: $small-desktop) {
+      font-size: 20px;
+    }
   }
 
   &__title {
@@ -40,6 +47,9 @@
     background-image: url(/img/more-icon-defalt.svg);
     
     transition: transform 0.5s;
+
+    position: absolute;
+    right: 0;
   }
 
   .ui-state-hover &__summary-text {

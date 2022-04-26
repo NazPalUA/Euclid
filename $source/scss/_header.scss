@@ -7,10 +7,21 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    @media screen and (max-width: $small-desktop) {
+      height: 69px;
+    }
   }
 
   &__logo-img {
     margin-right: 50px;
+
+    @media screen and (max-width: $desktop) {
+      margin-right: 0px;
+    }
+
+    @media screen and (max-width: $small-desktop) {
+      width: 150px;
+    }
   }
 
   &__burger {

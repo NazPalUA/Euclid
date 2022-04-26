@@ -1,11 +1,17 @@
 .footer {
   background: #222222;
+
   
   &__conteiner {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @media screen and (max-width: $small-desktop) {
+      height: 668px;
+      position: relative;
+    }
   }
 
   &__left {
@@ -21,10 +27,19 @@
 
   &__logo {
     margin-bottom: 20px;
+
+    @media screen and (max-width: $small-desktop) {
+      position: absolute;
+      left: 50px;
+      bottom: 126px;
+      margin-bottom: 0;
+    }
   }
 
   &__nav {
-
+    @media screen and (max-width: $small-desktop) {
+      display: none;
+    }
   }
   
   &__nav-list {
@@ -56,11 +71,22 @@
   }
 
   &__social {
-
+    @media screen and (max-width: $small-desktop) {
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+    }
   }
 
   &__form {
-
+    @media screen and (max-width: $small-desktop) {
+      padding-bottom: 248px;
+    }
+    @media screen and (max-width: $small-desktop) {
+      position: absolute;
+      left: 50px;
+      top: 50px;
+    }
   }
   
   &__description {

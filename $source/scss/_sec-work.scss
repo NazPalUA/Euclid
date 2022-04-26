@@ -11,6 +11,11 @@
   &__tab-list {
     display: flex;
     margin-bottom: 45px;
+
+    @media screen and (max-width: $small-desktop) {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   &__tab-item {
@@ -30,10 +35,19 @@
     &.active {
       color: #E1670E;
     }
+    @media screen and (max-width: $small-desktop) {
+      margin-right: 0;
+    }
   }
   
   &__content-list {
-    min-height: 460px;
+    height: 460px;
+    @media screen and (max-width: $desktop) {
+      height: 730px;
+    }
+    @media screen and (max-width: $small-desktop) {
+      height: unset;
+    }
   }
 
   &__content-item {
@@ -42,6 +56,11 @@
     &.active {
       display: flex;
       justify-content: space-between;
+      align-items: start;
+      // padding-bottom: 110px;
+      @media screen and (max-width: $small-desktop) {
+        flex-direction: column-reverse;
+      }
     }
   }
 
@@ -55,14 +74,30 @@
       // width: 47vw;
       margin-right: 25px;
     }
+    @media screen and (max-width: $desktop) {
+      width: 100%;
+      padding-right: 50px;
+    }
+    @media screen and (max-width: $small-desktop) {
+      padding-bottom: 105px;
+    }
   }
 
   &__pic {
     @media screen and (max-width: $big-desktop) {
-      width: 35vw;
-      object-fit: contain;
-      // height: 100%;
-    
+      width: calc(100% - 758px - 140px);
+      object-fit: cover;
+      height: 460px;
+    }
+    @media screen and (max-width: $desktop) {
+      width: 47.3%;
+      height: 730px;
+      object-fit: cover;
+    }
+    @media screen and (max-width: $small-desktop) {
+      height: 284px;
+      width: 100%;
+      margin-bottom: 38px;
     }
   }
 

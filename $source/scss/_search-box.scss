@@ -5,11 +5,22 @@
   
   transition: width 0.5s;
 
+  @media screen and (max-width: $small-desktop) {
+    position: absolute;
+    right: 50px;
+  }
+
   &.active {
     width: 539px;
     padding: 16px 95px 16px 32px;
     border-radius: 16px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+
+    @media screen and (max-width: $small-desktop) {
+      top: 70px;
+      background-color: #FFFFFF;
+      // transition-duration: 0s;
+    }
   }
 
   &__input {
