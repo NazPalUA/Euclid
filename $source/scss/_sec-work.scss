@@ -2,6 +2,9 @@
   
   &__title {
     margin-bottom: 50px;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 16px;
+    }
   }
 
   &__tabs {
@@ -37,6 +40,10 @@
     }
     @media screen and (max-width: $small-desktop) {
       margin-right: 0;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+      line-height: 17px;
     }
   }
   
@@ -81,6 +88,12 @@
     @media screen and (max-width: $small-desktop) {
       padding-bottom: 105px;
     }
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+      line-height: 28px;
+      padding: 0;
+      padding-bottom: 56px;
+    }
   }
 
   &__pic {
@@ -99,6 +112,10 @@
       width: 100%;
       margin-bottom: 38px;
     }
+    @media screen and (max-width: $tablet) {
+      height: 47vw;
+      margin-bottom: 16px;
+    }
   }
 
   &__btns-position {
@@ -109,5 +126,12 @@
   
   &__btn {
     margin-right: 32px;
+
+    @media screen and (max-width: $tablet) {
+      margin: 0;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
   }
 }

@@ -18,9 +18,11 @@
     @media screen and (max-width: $desktop) {
       margin-right: 0px;
     }
-
     @media screen and (max-width: $small-desktop) {
       width: 150px;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 110px;
     }
   }
 

@@ -1,10 +1,16 @@
 .social {
   display: flex;
+  z-index: 100;
 
   &__link {
     display: block;
     height: 60px;
     width: 60px;
+
+    @media screen and (max-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
 
     &:focus-visible {
       outline: 2px solid #FF9900;
@@ -16,7 +22,12 @@
     height: 60px;
     width: 60px;
     transition: background-image 0.2s;
-
+    @media screen and (max-width: $tablet) {
+      width: 40px;
+      height: 40px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__item:not(:last-child) {

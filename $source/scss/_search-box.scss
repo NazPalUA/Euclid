@@ -9,6 +9,9 @@
     position: absolute;
     right: 50px;
   }
+  @media screen and (max-width: $tablet) {
+    right: 15px;
+  }
 
   &.active {
     width: 539px;
@@ -21,6 +24,10 @@
       background-color: #FFFFFF;
       // transition-duration: 0s;
     }
+
+    @media screen and (max-width: $tablet) {
+      width: 260px;
+    }
   }
 
   &__input {
@@ -32,6 +39,10 @@
     font-size: 18px;
     line-height: 21.94px;
     color: #ADADAD;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+    }
 
     &.active {
       padding-bottom: 10px;

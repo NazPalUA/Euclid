@@ -2,10 +2,17 @@
     height: 620px;
     width: 100%;
 
+    @media screen and (max-width: $tablet) {
+      height: 308px;
+    }
+
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
       bottom: 30px;
       left: 0;
       width: 100%;
+      @media screen and (max-width: $tablet) {
+        bottom: 15px;
+      }
     }
 
     .swiper-slide-img {

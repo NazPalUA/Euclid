@@ -16,6 +16,13 @@
   transition-duration: 0.2s;
   transition-timing-function: linear;
 
+  @media screen and (max-width: $tablet) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 12.5px 28.5px;
+  }
+
   &:hover {
     background: rgba(255, 153, 0, 0.7);
   }
@@ -43,7 +50,7 @@
   
   font-size: 16px;
   line-height: 20px;
-  
+
   &:hover {
     outline-color: transparent;
     background: #FF9900;
@@ -58,6 +65,27 @@
   &:active {
     outline-color: transparent;
     background: #E1670E;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 162px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 11px 14px;
+    color: #FF9900;
+    border: 2px solid #FF9900;
+    &:hover {
+      color: #FFFFFF;
+    }
+    
+    &:focus-visible {
+      color: #FFFFFF;
+    }
+    
+    &:active {
+      color: #FFFFFF;
+    }
   }
 }
 
@@ -80,13 +108,22 @@
   &:active {
     background: #E1670E;
   }
+
+  @media screen and (max-width: $tablet) {
+    height: 40px;
+    width: 162px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 11px 14px;
+  }
 }
 
 
 /* Button Section Work Black-and-white*/
 .btn_black-and-white {
   outline: 1px solid #333333;
-  outline-offset: -1px;
+  outline-offset: -2px;
   background: #FFF;
 
   font-weight: normal;
@@ -111,7 +148,14 @@
     background: #000;
     outline-color: #000;
     color: #FFF;
-}
+  }
+  @media screen and (max-width: $tablet) {
+    height: 40px;
+    width: 118px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 11px 29px;
+  }
 }
 
 
@@ -121,4 +165,13 @@
  
   font-size: 16px;
   line-height: 20px;
+
+  @media screen and (max-width: $tablet) {
+    padding: 12px 23px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    height: 40px;
+    width: 180px;
+  }
 }

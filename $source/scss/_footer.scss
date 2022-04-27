@@ -12,6 +12,12 @@
       height: 668px;
       position: relative;
     }
+    @media screen and (max-width: $tablet) {
+      box-sizing: border-box;
+      height: 673px;
+      padding: 0;
+      padding-top: 32px;
+    }
   }
 
   &__left {
@@ -27,12 +33,19 @@
 
   &__logo {
     margin-bottom: 20px;
+    z-index: 100;
 
     @media screen and (max-width: $small-desktop) {
       position: absolute;
       left: 50px;
       bottom: 126px;
       margin-bottom: 0;
+    }
+    @media screen and (max-width: $tablet) {
+      width: 131px;
+      left: calc(50% - 131px/2);
+      // left: 50%;
+      bottom: 88px;
     }
   }
 
@@ -76,6 +89,10 @@
       left: 50px;
       bottom: 50px;
     }
+    @media screen and (max-width: $tablet) {
+      left: calc(50% - 152px/2);
+      bottom: 32px;
+    }
   }
 
   &__form {
@@ -86,6 +103,13 @@
       position: absolute;
       left: 50px;
       top: 50px;
+    }
+    @media screen and (max-width: $tablet) {
+      left: 14px;
+      top: 32px;
+      // bottom: 0;
+      right: 14px;
+      padding-bottom: 146px;
     }
   }
   

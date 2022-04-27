@@ -7,6 +7,10 @@
   &__description {
     max-width: 1235px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 8px;
+    }
   }
 
   &__main-content {
@@ -32,6 +36,16 @@
       width: 100%;
       margin-bottom: 32px;
     }
+
+    @media screen and (max-width: $tablet) {
+      display: block;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      // height: 60vw;
+      // margin-bottom: 240px;
+      height: unset;
+    }
   }
 
   &__banner-content {
@@ -46,6 +60,16 @@
     right: 0;
     
     background: rgba(0, 0, 0, 0.5);
+
+    @media screen and (max-width: $tablet) {
+      // top: calc(60vw + 8px);
+      height: unset;
+      background: unset;
+      flex-direction: column;
+      position: static;
+      margin-top: calc(72% + 8px);
+      align-items: start;
+      }
   }
 
   &__banner-text {
@@ -61,6 +85,14 @@
       width: 366px;
       margin-left: 40px;
     }
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 400;
+      color: #333333;
+      width: unset;
+      margin-left: 0;
+      }
   }
 
   &__btn {
@@ -87,6 +119,10 @@
         margin-bottom: 32px;
       }
     }
+    @media screen and (max-width: $tablet) {
+      border: none;
+      height: unset;
+    }
   }
 
   &__card-content {
@@ -106,6 +142,12 @@
     @media screen and (max-width: $small-desktop) {
       padding: 30px;
     }
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      align-items: start;
+      padding: 0;
+      height: unset;
+    }
   }
 
   &__card-icon {
@@ -120,12 +162,20 @@
       margin-right: 16px;
       width: 114px;
     }
+    @media screen and (max-width: $tablet) {
+      width: 64px;
+      margin-bottom: 12px;
+    }
   }
 
   &__card-description  {
     font-size: 16px;
     line-height: 32px;
     color: #333333;
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+      line-height: 28px;
+    }
   }
 
   &__card-title {
@@ -136,5 +186,13 @@
     font-size: 24px;
     line-height: 29px;
     color: #333;
+    @media screen and (max-width: $tablet) {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 4px;
+    }
   }
+
+
 }

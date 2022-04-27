@@ -33,8 +33,16 @@ body {
   text-align: left;
   color: #333;
 
-  overflow-x: hidden;
+  // overflow-x: hidden;
   margin: auto;
-
   background-color: #FFFFFF;
+
+  @media screen and (max-width: $tablet) {
+    &.lock {
+      overflow: hidden;
+    }
+    font-size: 14px;
+    line-height: 28px;
+    // overflow-x: hidden;
+  }
 }

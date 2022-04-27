@@ -1,5 +1,11 @@
 .section {
   margin-bottom: 100px;
 
+  @media screen and (max-width: $small-desktop) {
+    margin-bottom: 80px;
+  }
 
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 60px;
+  }
 }

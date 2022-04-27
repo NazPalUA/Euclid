@@ -6,6 +6,10 @@
     font-size: 16px;
     line-height: 32px;
     color: #333333;
+    @media screen and (max-width: $tablet) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   &__summary {
@@ -29,16 +33,27 @@
     
     transition: color 0.3s;
 
-    padding-right: 80px;
+    padding-right: 47px;
 
     @media screen and (max-width: $small-desktop) {
       font-size: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
     }
   }
 
   &__title {
     margin-bottom: 32px;
     line-height: 70px;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 16px;
+    }
   }
 
   &__summary-icon {
@@ -50,6 +65,13 @@
 
     position: absolute;
     right: 0;
+
+    
+    @media screen and (max-width: $tablet) {
+      background-size: contain;
+      height: 30px;
+      width: 30px;
+    }
   }
 
   .ui-state-hover &__summary-text {

@@ -3,6 +3,10 @@
   align-items: center;
   height: 100%;
 
+  @media screen and (max-width: $desktop) {
+    padding-left: 32px;
+  }
+
   &__list {
     transition: left 0.2s ease-in;
 
@@ -24,6 +28,10 @@
       &.active {
         left: 0px;
       }
+    }
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      left: -101%;
     }
   }
 
