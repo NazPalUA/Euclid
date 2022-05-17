@@ -556,11 +556,11 @@ body {
 
 .search-box__search-btn {
   z-index: 1;
-  background-image: url(img/search_icon_default.svg);
+  background-image: url(../img/search_icon_default.svg);
 }
 
 .search-box__search-btn:hover {
-  background-image: url(img/search_icon_hover.svg);
+  background-image: url(../img/search_icon_hover.svg);
 }
 
 .search-box__search-btn.active {
@@ -570,15 +570,15 @@ body {
 }
 
 .search-box__cancel-btn {
-  background-image: url(img/close_icon_default.svg);
+  background-image: url(../img/close_icon_default.svg);
 }
 
 .search-box__cancel-btn:hover {
-  background-image: url(img/close_icon_hover.png);
+  background-image: url(../img/close_icon_hover.png);
 }
 
 .search-box__cancel-btn:active {
-  background-image: url(img/close_icon_active.svg);
+  background-image: url(../img/close_icon_active.svg);
 }
 
 .search-box__cancel-btn.active {
@@ -1241,7 +1241,7 @@ body {
   position: relative;
   height: 622px;
   width: 49.04%;
-  background-image: url(img/About_Us_Pic.png);
+  background-image: url(../img/About_Us_Pic.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1745,7 +1745,7 @@ body {
 .sec-questions__summary-icon {
   height: 50px;
   width: 50px;
-  background-image: url(img/more-icon-defalt.svg);
+  background-image: url(../img/more-icon-defalt.svg);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -1767,7 +1767,7 @@ body {
 }
 
 .ui-state-hover .sec-questions__summary-icon {
-  background-image: url(img/more-icon-hover.svg);
+  background-image: url(../img/more-icon-hover.svg);
 }
 
 .sec-questions .ui-state-focus {
@@ -1775,7 +1775,7 @@ body {
 }
 
 .ui-state-focus .sec-questions__summary-icon {
-  background-image: url(img/more-icon-hover.svg);
+  background-image: url(../img/more-icon-hover.svg);
 }
 
 .ui-state-focus .sec-questions__summary-text {
@@ -1974,7 +1974,7 @@ body {
 
 .form__ag-check.active .form__ag-check-text::before {
   border: none;
-  background-image: url(img/Check_active.svg);
+  background-image: url(../img/Check_active.svg);
 }
 
 .form__checkbox {
@@ -2034,39 +2034,39 @@ body {
 }
 
 .social__item_bg_fb {
-  background-image: url(img/fb/fb.svg);
+  background-image: url(../img/fb/fb.svg);
 }
 
 .social__item_bg_fb:hover {
-  background-image: url(img/fb/fb_hover.svg);
+  background-image: url(../img/fb/fb_hover.svg);
 }
 
 .social__item_bg_fb:active {
-  background-image: url(img/fb/fb_active.svg);
+  background-image: url(../img/fb/fb_active.svg);
 }
 
 .social__item_bg_inst {
-  background-image: url(img/inst/instagram.svg);
+  background-image: url(../img/inst/instagram.svg);
 }
 
 .social__item_bg_inst:hover {
-  background-image: url(img/inst/instagram_hover.svg);
+  background-image: url(../img/inst/instagram_hover.svg);
 }
 
 .social__item_bg_inst:active {
-  background-image: url(img/inst/instagram_active.svg);
+  background-image: url(../img/inst/instagram_active.svg);
 }
 
 .social__item_bg_vk {
-  background-image: url(img/vk/vk.svg);
+  background-image: url(../img/vk/vk.svg);
 }
 
 .social__item_bg_vk:hover {
-  background-image: url(img/vk/vk_hover.svg);
+  background-image: url(../img/vk/vk_hover.svg);
 }
 
 .social__item_bg_vk:active {
-  background-image: url(img/vk/vk_active.svg);
+  background-image: url(../img/vk/vk_active.svg);
 }
 
 .footer {
